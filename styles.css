@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*, *::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+.top-logo-menu{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-desktop-img{
+    display: none;
+}
+
+.hero-about h1{
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 3rem 0 1.8rem 0 ;
+}
+
+.hero-about p{
+    text-align: center;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.7rem;
+    padding: 0 1rem;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: hsl(0, 0%, 8%);
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+button:hover{
+    background: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    border: 2px solid hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.bottom-images{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.slider{
+    position: absolute;
+    background: hsl(0, 0%, 98%);
+    left: 130px;
+    width: 15rem;
+    height: 100%;
+    padding: 1.5rem;
+    display: none;
+}
+
+.close-menu{
+    position: absolute;
+    right: 20px;
+}
+
+.menu{
+    margin-top: 4rem;
+}
+
+.features, .company{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.features img, .company img{
+    margin-bottom: 1rem;
+}
+
+h4{
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 1rem;
+}
+
+h4:hover{
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+  }
+
+.login{
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 0;
+}
+
+.register{
+    width: 100%;
+    background: transparent;
+    color: hsl(0, 0%, 41%);;
+    border: 2px solid hsl(0, 0%, 41%);
+    font-size: 0.8rem;
+}
+
+.arrow-up{
+    display: none;
+}
+
+.feature-expand{
+    padding: 0.8rem 1.5rem 0 1.5rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.feature-inner{
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 41%);
+    font-size: 0.7rem;
+}
+
+.company-inner{
+    padding: 0.8rem 1.5rem 0 1.5rem;
+    color: hsl(0, 0%, 41%);
+    font-size: 0.7rem;
+    display: none;   
+}
+
+.company-inner p{
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width: 1440px) {
+    body {
+      padding: 1rem 5rem;
+    }
+
+    .top-logo-menu{
+        padding: 2rem 0;
+    }
+
+    .icon-menu{
+        display: none;
+    }
+
+    .close-menu{
+        display: none;
+    }
+
+    .slider{
+        display: block;
+        background: transparent;
+    }
+
+  .menu{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50.5rem;
+    left: 5rem;
+    gap: 3rem;
+  }
+
+  .login{
+    position: absolute;
+    left: 60rem;
+    bottom: 1.5rem;
+    margin-top: 0;
+  }
+
+  .register{
+    position: absolute;
+    left: 66rem;
+    bottom: 0.5rem;
+    width: 7rem;
+  }
+
+  h4{
+    font-size: 1.1rem;
+  }
+
+  .hero-mobile-img{
+        display: none;
+  }
+
+  .hero-desktop-img{
+        display: block;
+  }
+
+  .hero-section{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5rem;
+  }
+
+  .hero-about h1{
+        font-size: 6rem;
+        margin-top: 6rem;
+        text-align: left;
+  }
+
+  .hero-about p{
+        text-align: left;
+        font-size: 1.3rem;
+        margin-top: 4rem;
+        line-height: 2.2rem;
+        width: 35rem;
+  }
+
+    .hero-about .btn{
+        justify-content: flex-start;
+        margin-top: 2.7rem;
+    }
+
+    .hero-about .btn button{
+        padding: 1.5rem 3rem;
+    }
+
+    .bottom-images{
+        justify-content: flex-start;
+        margin-top: 2rem;
+        gap: 3rem;
+    }
+
+    .bottom-images img{
+        width: 7rem;
+    }
+
+    .feature-expand{
+        position: absolute;
+        top: 2rem;
+        left: -2rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 62px -21px rgba(0,0,0,0.75)
+    }
+
+    .company-inner{
+        position: absolute;
+        top: 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 62px -21px rgba(0,0,0,0.75)
+
+    }
+
+  }
