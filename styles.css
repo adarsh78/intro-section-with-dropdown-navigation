@@ -179,13 +179,13 @@ h4:hover{
     }
 
   .menu{
-    margin-top: 0;
     display: flex;
     align-items: center;
     position: absolute;
     bottom: 50.5rem;
     left: 5rem;
     gap: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   .login{
